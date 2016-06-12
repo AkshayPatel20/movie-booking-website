@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>http://localhost:49616/moviebookingsystem/images/screenshot-3.png</ImageUrl>
+    <NavigateUrl>http://www.microsoft.com/en-in/default.aspx</NavigateUrl>
+    <AlternateText>Windows 8</AlternateText>
+    <Impressions>50</Impressions>
+  
+  </Ad>
+  <Ad>
+    <ImageUrl>http://localhost:49616/moviebookingsystem/images/ShakeOut_BannerAds_JoinUs_728x90_v2.gif</ImageUrl>
+    <NavigateUrl>http://www.shakeout.org/</NavigateUrl>
+    <AlternateText>Shake out</AlternateText>
+    <Impressions>50</Impressions>
+   
+  </Ad>
+</Advertisements>

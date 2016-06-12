@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="css/bootstrapblack.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    body
+    {
+        background-image:url("film-movies-movie-making-minimalism-creative-backgrounds-wallpapers.jpg");
+        
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <div class="container-fluid">
+
+<a class="navbar-brand" href="#"><img src="../images/IMG-20150401-WA0003.jpg"
+ style="height: 45px; width: 236px; top: 2px; line-height: normal; position: absolute; z-index: auto;" /></a>
+  
+  <div class="navbar-header navbar-right">
+  <ul class="nav navbar-nav" nav-tabs>
+  <li><a href="../index.aspx">Home</a></li>
+  <li><a href="../aboutus.html">About us</a></li>
+  <li><a href="../user/ticketcancel.aspx">Cancel Ticket</a></li>
+  <li><a href="../Login.aspx">Admin Login</a></li>
+  <li><a href="../booking.aspx">Booking</a></li>
+  </ul>
+  </div>
+  </div>
+  
+</nav>
+<br><br>
+<br><br>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class=" container-fluid">
+    <p class="navbar-text pull-left">&copy; 2015 AP Cinema - Your Favorite movie booking Website!. All rights reserved.</p>
+    </div>
+
+</div>
+    </form>
+</body>
+</html>

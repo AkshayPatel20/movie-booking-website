@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="Admin_MasterPageAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Untitled Document</title>
+    <script language="javascript" type="text/javascript" src="../jquery/datetimepicker.js"></script>
+
+    <style type="text/css">
+<!--
+.table { border:#B30000 solid 1px; background-color:#fff; }
+-->
+
+   body { background: navy; }
+
+</style>
+
+    <script language="javascript" type="text/javascript">
+
+// <!CDATA[
+
+        function TABLE1_onclick() {
+        }
+// ]]>
+    </script>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"/>
+ <div class="container-fluid">
+
+<a class="navbar-brand" href="#"><img src="images/IMG-20150401-WA0003.jpg"
+ style="height: 45px; width: 236px; top: 2px; line-height: normal; position: absolute; z-index: auto;" /></a>
+  
+  <div class="navbar-header navbar-right">
+  <ul class="nav navbar-nav" nav-tabs>
+  <li><a href="../index.aspx">Home</a></li>
+  <li><a href="../aboutus.html">About us</a></li>
+  <li><a href="../booking.aspx">Booking</a></li>
+  </ul>
+  </div>
+  </div>
+  
+</nav>
+<br><br>
+<br><br>
+
+    <table width="1000" align="center" cellpadding="0" cellspacing="0" class="table"
+        id="TABLE1" onclick="return TABLE1_onclick()">
+        
+        <tr>
+            <td background="../images/menu.gif" style="height: 11px">
+                &nbsp;<asp:Menu ID="Menu1" runat="server" Font-Bold="True" ForeColor="#FFFFFF" Height="22px"
+                    Orientation="Horizontal" Width="1001px">
+                    <Items>
+                         <asp:MenuItem NavigateUrl="~/Admin/movies.aspx" Text="Movies     |" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/theatre.aspx" Text="Theatres     |" Value="New Item"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/assignmovie.aspx" Text="Assign Movies     |" Value="New Item">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/AdminHome.aspx" Text="AdminHome     |" Value="AdminHome">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="../index.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+
+    
+
+        <td height="500" background="../images/bg.gif">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+        </tr>
+        <tr>
+            <td height="25" bgcolor="#B30000" style="width: 1002px">
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
